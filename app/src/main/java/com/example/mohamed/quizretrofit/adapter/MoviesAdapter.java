@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 import com.example.mohamed.quizretrofit.R;
 import com.example.mohamed.quizretrofit.model.Movie;
+import com.flaviofaria.kenburnsview.KenBurnsView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -29,12 +30,12 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
 
     public  class MovieViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private ImageView mImageView;
+        private KenBurnsView mImageView;
 
         public MovieViewHolder(View v) {
             super(v);
             v.setOnClickListener(this);
-            mImageView= (ImageView) v.findViewById(R.id.movie_poster);
+            mImageView= (KenBurnsView) v.findViewById(R.id.movie_poster);
         }
 
         @Override
