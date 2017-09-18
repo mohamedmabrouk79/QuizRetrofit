@@ -14,6 +14,7 @@ public class Movie {
 
     public Movie(String title, String posterPath) {
         this.title = title;
+
         this.posterPath = posterPath;
     }
 
